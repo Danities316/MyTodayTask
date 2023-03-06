@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from "react";
-import socketIO from "socket.io-client"
-// import { params } from "react-router-dom"
+import socketIO from "socket.io-client";
+import { params } from "react-router-dom"
 
 const socket = socketIO.connect("http://localhost:4000")
 

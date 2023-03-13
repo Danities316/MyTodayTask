@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../index.css';
 
 const Login = () => {
     const [username, setUsername] = useState("");
@@ -15,7 +16,7 @@ const Login = () => {
     };
     return (
         <div className='login__container'>
-            <form className='login_form' onSubmit={handleLogin}>
+            <form className='login__form' onSubmit={handleLogin}>
                 <label htmlFor='username'> Username </label>
                 <input
                 type= 'text'

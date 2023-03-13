@@ -15,8 +15,8 @@ const Task = () =>{
     return (
         <div>
             <Nav />
-            <AddTask  socket= {socket}/>
-            <TasksContainer socket= {socket} />
+            <AddTask  socket= {socket} />
+            <TasksContainer socket= {socket}  />
         </div>
     );
 };

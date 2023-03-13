@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
+import '../index.css';
 
-export const TasksContainer = ({ socket }) => {
+ const TasksContainer = ({ socket }) => {
     const [tasks, setTasks] = useState({})
+
     useEffect(() => {
         function fetchTasks(){
             fetch("http://localhost:4000/api")
@@ -36,7 +38,7 @@ export const TasksContainer = ({ socket }) => {
     }
         return (
 
-         <>x
+         <>
          <div className='container'>
 
                 {/** --- 👇🏻 DragDropContext  ---- */}
@@ -89,3 +91,7 @@ export const TasksContainer = ({ socket }) => {
             </div>
             </>
         )
+                   
+}
+
+export default TasksContainer
